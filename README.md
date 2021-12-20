@@ -1,10 +1,14 @@
 # Docker_nodejs
 
-Here we are going to create a simple hello-world application in node.js and then we’ll dockerize it. For that fisrt we are creating a directory called "nodejs" where all the files would live. In this directory create a package.json file that describes your app and its dependencies.
+Here we are going to create a simple hello-world application in node.js and then we’ll dockerize it. For that fisrt we are creating a directory called "nodejs" where all the files would live. In this directory create a package.json file that describes our app and its dependencies.
 
 ## Requirements
 
 - [Install docker](https://docs.docker.com/engine/install/)
+
+### Procedure
+
+Create a directory named "nodejs"
 
 ```
 mkdir nodejs
@@ -12,6 +16,7 @@ cd nodejs
 ]# cd nodejs
 [ nodejs]# 
 ```
+Now need to create a .json file  that describes our app and its dependencies:
 ```
 nodejs]# cat package.json
 {
@@ -29,7 +34,9 @@ nodejs]# cat package.json
 }
 
 ```
+
 Then, create a server.js file that defines a web app using the Express.js framework:
+
 ```
 nodejs]# cat server.js
 'use strict';
