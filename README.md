@@ -96,7 +96,7 @@ Your app binds to port 8085 so you'll use the EXPOSE instruction to have it mapp
 EXPOSE 8085
 ```
 
-Latly we need to define the command to run the app using CMD which defines the runtime. Here we will use node server.js to start our server:
+Lastly we need to define the command to run the app using CMD which defines the runtime. Here we will use node server.js to start our server:
 ```
 CMD [ "node", "server.js" ]
 ```
@@ -125,7 +125,6 @@ CMD [ "node", "server.js" ]
 Once the Dockerfile is ready we need to build an image from the above Dockerfile.
 
 For that use the below command to build an image.
-
 ```
 cd nodejs
 nodejs]# ls -la
@@ -133,9 +132,13 @@ nodejs]# ls -la
 -rw-r--r-- 1 root root 266 Dec 19 09:09 package.json
 -rw-r--r-- 1 root root 278 Dec 19 08:56 server.js
 [nodejs]#
-
-docker build -t ismailpb/nodejsapp:latest .
 ```
+```
+docker build -t ismailpb/nodejsapp:latest .
+
+```
+Please note that we need to verify the file location as the above command should e run in the files location.
+
 Once the image is created, just list the image using
 ```
 # docker image ls
