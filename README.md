@@ -137,14 +137,14 @@ nodejs]# ls -la
 docker build -t ismailpb/nodejsapp:latest .
 
 ```
-Please note that we need to verify the file location as the above command should e run in the files location.
+Please note that we need to verify the file location as the above command should be run in the files location.
 
 Once the image is created, just list the image using
 ```
 # docker image ls
 
 ```
-Lastly we can create a conatiner using the image that we build with the below command:
+Lastly we can create a container using the image that we build with the below command:
 
 ```
 docker container run --name nodejs -p 80:8085 -d ismailpb/nodejsapp:latest
