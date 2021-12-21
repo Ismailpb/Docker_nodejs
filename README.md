@@ -1,6 +1,6 @@
 # Docker_nodejs
 
-Here we are going to create a simple hello-world application in node.js and then we’ll dockerize it. For that fisrt we are creating a directory called "nodejs" where all the files would live. In this directory create a package.json file that describes our app and its dependencies.
+Here we are going to create a simple hello-world application in node.js and then we’ll dockerize it. For that first we are creating a directory called "nodejs" where all the files would live. In this directory create a package.json file that describes our app and its dependencies.
 
 ## Requirements
 
